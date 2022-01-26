@@ -9,17 +9,15 @@
 
   <body>
     <header id="header">
-      <img
-        id="header-img"
-        src="https://cdn-icons-png.flaticon.com/512/4529/4529997.png"
-        alt=""
-      />
       <nav id="nav-bar">
-        <ul>
-          <li><a href="#" class="nav-link"></a></li>
-          <li><a href="#" class="nav-link"></a></li>
-          <li><a href="#" class="nav-link"></a></li>
-        </ul>
+        <img
+          id="header-img"
+          src="https://cdn-icons-png.flaticon.com/512/4529/4529997.png"
+          alt=""
+        />
+        <a href="#" class="nav-link">Games</a>
+        <a href="#" class="nav-link">Video</a>
+        <a href="#" class="nav-link">Contact</a>
       </nav>
     </header>
     <main>
@@ -32,40 +30,37 @@
             type="email"
             name="email"
             id="email"
+            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
             placeholder="example@mail.com"
           />
         </form>
       </div>
-      <div class="top-main-list">
-        <div class="top-main-list1">
-          <img
-            src="https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_390x400_1x-0.jpeg"
-            alt=""
-          />
-        </div>
-        <div class="top-main-list2">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BZWYxY2VmN2ItNjNlNi00ZmM0LWEwMjEtMTE1NGQxMGVhMWQxXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg"
-            alt=""
-          />
-        </div>
-        <div class="top-main-list3">
-          <img
-            src="https://s1.gaming-cdn.com/images/products/8259/orig/call-of-duty-vanguard-pc-game-battlenet-europe-cover.jpg"
-            alt=""
-          />
+      <div class="video-container">
+        <div id="video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/NaSQDcrKV6A"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-      <div id="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/NaSQDcrKV6A"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div class="top-main-list">
+        <img
+          src="https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_390x400_1x-0.jpeg"
+          alt=""
+        />
+        <img
+          src="https://m.media-amazon.com/images/M/MV5BZWYxY2VmN2ItNjNlNi00ZmM0LWEwMjEtMTE1NGQxMGVhMWQxXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg"
+          alt=""
+        />
+        <img
+          src="https://s1.gaming-cdn.com/images/products/8259/orig/call-of-duty-vanguard-pc-game-battlenet-europe-cover.jpg"
+          alt=""
+        />
       </div>
       <div class="bot-main"></div>
     </main>
