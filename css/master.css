@@ -4,7 +4,118 @@
   box-sizing: border-box;
 }
 
+:root {
+  --navbar-height: 65px;
+  --background: rgb(1, 29, 36);
+  --text-color: white;
+}
+
 body {
-  background-color: hotpink;
+  background-color: var(--background);
   margin: 0 0;
+
+  color: var(--text-color);
+
+  font-family: "Khand", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+
+  padding-top: 30px;
+
+  color: var(--text-color);
+
+  text-transform: uppercase;
+  text-shadow: 2px 2px #ff0000, 4px 4px orange, 6px 6px yellow;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+}
+
+a {
+  color: var(--text-color);
+
+  font-weight: 900;
+  font-size: 1rem;
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-logo {
+  display: flex;
+
+  height: var(--navbar-height);
+
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Press Start 2P", cursive;
+
+  background-color: var(--background);
+}
+
+.nav-logo img {
+  height: 6rem;
+  padding: 0 10px 0 30px;
+}
+
+.links {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: var(--background);
+}
+
+.links a {
+  padding: 20px 25px 5px 25px;
+}
+
+.links a:hover {
+  color: orange;
+}
+
+.main-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+}
+
+.main-top {
+  grid-column: 1 / span 4;
+
+  height: 800px;
+
+  background-image: url("https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2021/06/02/146b21ac-c36b-11eb-b0c2-606eecf395cb_image_hires_194504.jpg?itok=iL5GIJph&v=1622634313");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: calc(var(--navbar-height) + 40px);
+  /* background-color: #0092b6; */
+}
+
+.mid-main-list {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-mid {
+  grid-column: 1 / span 4;
+
+  padding: 20px 10px;
+}
+
+.main-mid img {
+  height: 400px;
+  width: 320px;
+
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid white;
 }

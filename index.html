@@ -4,39 +4,115 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="./css/master.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;600&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Product Landing page - freecodecamp project</title>
   </head>
 
-  <body></body>
-</html>
-
-<!--    
-      <div class="video-container">
-        <div id="video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/NaSQDcrKV6A"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <div class="nav-logo">
+          <h1>Comet</h1>
+          <img
+            class="logo"
+            id="header-img"
+            src=".\images\Comet.png"
+            alt="company logo"
+          />
+          <h1>Games</h1>
+        </div>
+        <div class="links">
+          <a href="#" class="nav-link">Link1</a>
+          <a href="#" class="nav-link">Link2</a>
+          <a href="#" class="nav-link">Link3</a>
+        </div>
+      </nav>
+    </header>
+    <main class="main-grid">
+      <div class="main-top">
+        <div></div>
+        <!-- TODO: Work on text div for big image next! 
+          Maybe do a grid inside the main grid for easier positioning, or flexbox?-->
+      </div>
+      <div class="main-mid">
+        <div class="mid-main-list">
+          <img
+            src="https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_390x400_1x-0.jpeg"
+            alt=""
+          />
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BZWYxY2VmN2ItNjNlNi00ZmM0LWEwMjEtMTE1NGQxMGVhMWQxXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg"
+            alt=""
+          />
+          <img
+            src="https://s1.gaming-cdn.com/images/products/8259/orig/call-of-duty-vanguard-pc-game-battlenet-europe-cover.jpg"
+            alt=""
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png"
+            alt=""
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/9/91/WoW_Box_Art1.jpg"
+            alt=""
+          />
+          <img
+            src="https://m.media-amazon.com/images/M/MV5BYWQyNTY1NzAtMGJiYi00ZTcwLWE0ZjktYjY4YTZkMzA1YzZmXkEyXkFqcGdeQXVyNTgyNTA4MjM@._V1_FMjpg_UX1000_.jpg"
+            alt=""
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/7/7f/Sims4_Rebrand.png"
+            alt=""
+          />
+          <img
+            src="https://s3.gaming-cdn.com/images/products/5972/orig/hades-pc-mac-game-steam-cover.jpg"
+            alt=""
+          />
+          <img
+            src="https://s2.gaming-cdn.com/images/products/709/orig/game-epic-games-borderlands-3-cover.jpg"
+            alt=""
+          />
+          <img
+            src="https://s3.gaming-cdn.com/images/products/29/orig/guild-wars-2-pc-game-ncsoft-cover.jpg"
+            alt=""
+          />
+        </div>
+        <div class="video-container">
+          <div id="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NaSQDcrKV6A"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
-      <div class="top-main-list">
-        <img
-          src="https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_390x400_1x-0.jpeg"
-          alt=""
-        />
-        <img
-          src="https://m.media-amazon.com/images/M/MV5BZWYxY2VmN2ItNjNlNi00ZmM0LWEwMjEtMTE1NGQxMGVhMWQxXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_.jpg"
-          alt=""
-        />
-        <img
-          src="https://s1.gaming-cdn.com/images/products/8259/orig/call-of-duty-vanguard-pc-game-battlenet-europe-cover.jpg"
-          alt=""
-        />
+      <div class="main-bot">
+        <!-- TODO: add subscription cards with clickable buttons -->
       </div>
-
- -->
+    </main>
+    <footer>
+      <form action="">
+        <label for="email">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            placeholder="email@example.com"
+          />
+        </label>
+      </form>
+    </footer>
+  </body>
+</html>
