@@ -17,26 +17,65 @@
   <body>
     <header>
       <nav id="nav-bar">
-        <div class="nav-logo">
-          <h1>Comet</h1>
-          <img
-            class="logo"
-            id="header-img"
-            src=".\images\Comet.png"
-            alt="company logo"
-          />
-          <h1>Games</h1>
-        </div>
-        <div class="links">
-          <a href="#" class="nav-link">Link1</a>
-          <a href="#" class="nav-link">Link2</a>
-          <a href="#" class="nav-link">Link3</a>
+        <div class="nav-grid">
+          <div class="nav-logo">
+            <h1 class="comet">Comet</h1>
+            <img
+              class="logo"
+              id="header-img"
+              src=".\images\Comet.png"
+              alt="company logo"
+            />
+            <h1 class="gaming">Gaming</h1>
+          </div>
+
+          <div class="links">
+            <div class="link-container">
+              <a href="#mission" class="nav-link">Our Mission</a>
+              <a href="#" class="nav-link">Games</a>
+              <a href="#" class="nav-link">Services</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <main class="main-grid">
-      <div class="main-top">
-        <div></div>
+      <div class="main-top" id="mission">
+        <div class="mission">
+          <h2>Our Mission</h2>
+          <p>
+            We want to bring the joy of gaming on a proffessional level to more
+            people. With our experts in gaming <strong>YOU</strong> can become
+            the next pro.<br />
+<hr>
+            Check out our different subscriptions and sign-up today! 
+          </p>
+          <form action="">
+            <div class="form-group">
+            <label for="Name">Name:
+              <input type="name" placeholder="John Doe" required>
+            </label>
+            </div>
+            <div class="form-group">
+            <label for="email">Email: 
+              <input
+                type="email"
+                name="email"
+                id="email"
+                pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                placeholder="email@example.com"
+                required
+              />
+            </label>
+            </div>
+            <div class="btn">
+              <button id="submit" type="submit" name="submit">
+                Submit form
+              </button>
+             </div>
+
+          </form>
+        </div>
         <!-- TODO: Work on text div for big image next! 
           Maybe do a grid inside the main grid for easier positioning, or flexbox?-->
       </div>
@@ -102,17 +141,7 @@
       </div>
     </main>
     <footer>
-      <form action="">
-        <label for="email">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            placeholder="email@example.com"
-          />
-        </label>
-      </form>
+
     </footer>
   </body>
 </html>

@@ -5,7 +5,7 @@
 }
 
 :root {
-  --navbar-height: 65px;
+  --navbar-height: 3rem;
   --background: rgb(1, 29, 36);
   --text-color: white;
 }
@@ -21,60 +21,96 @@ body {
 
 h1 {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.5rem;
 
-  padding-top: 30px;
+  padding-top: 0;
+  margin: 0;
 
   color: var(--text-color);
+
+  font-family: "Press Start 2P", cursive;
 
   text-transform: uppercase;
   text-shadow: 2px 2px #ff0000, 4px 4px orange, 6px 6px yellow;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 1rem;
+
+  padding-top: 0;
+  margin: 0;
+
+  color: var(--text-color);
+
+  font-family: "Press Start 2P", cursive;
+
+  text-transform: uppercase;
+  text-shadow: 1px 1px #ff0000, 2px 2px orange, 3px 3px yellow;
+}
+
 nav {
   position: fixed;
   width: 100%;
+  height: var(--navbar-height);
+
+  box-shadow: 0 0.02rem 0.5rem rgb(0, 0, 0);
 }
 
-a {
+.nav-grid {
+  display: grid;
+
+  grid-template-columns: 20% 60% 20%;
+  grid-template-rows: var(--navbar-height);
+
+  grid-auto-flow: row;
+
+  background-color: var(--background);
+}
+
+.nav-logo {
+  display: inline-flex;
+  grid-column: 2 / span 1;
+
+  height: var(--navbar-height);
+
+  justify-content: center;
+
+  padding-top: 1rem;
+}
+
+.comet {
+  padding-right: 10px;
+}
+.nav-logo img {
+  height: 4rem;
+  overflow: hidden;
+  margin-top: -1rem;
+}
+
+.links {
+  grid-column: 3 / span 1;
+
+  text-align: end;
+}
+
+.link-container {
+  width: 65%;
+
+  padding-top: calc(var(--navbar-height) - 25px);
+}
+
+.nav-link {
   color: var(--text-color);
 
+  padding: 0 1.5rem 0 0;
+
+  font-family: "Khand", sans-serif;
   font-weight: 900;
   font-size: 1rem;
 
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.nav-logo {
-  display: flex;
-
-  height: var(--navbar-height);
-
-  align-items: center;
-  justify-content: center;
-
-  font-family: "Press Start 2P", cursive;
-
-  background-color: var(--background);
-}
-
-.nav-logo img {
-  height: 6rem;
-  padding: 0 10px 0 30px;
-}
-
-.links {
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  background: var(--background);
-}
-
-.links a {
-  padding: 20px 25px 5px 25px;
 }
 
 .links a:hover {
@@ -91,13 +127,28 @@ a {
 .main-top {
   grid-column: 1 / span 4;
 
-  height: 800px;
+  height: 55rem;
 
   background-image: url("https://img.i-scmp.com/cdn-cgi/image/fit=contain,width=1098,format=auto/sites/default/files/styles/1200x800/public/d8/images/methode/2021/06/02/146b21ac-c36b-11eb-b0c2-606eecf395cb_image_hires_194504.jpg?itok=iL5GIJph&v=1622634313");
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  margin-top: calc(var(--navbar-height) + 40px);
-  /* background-color: #0092b6; */
+  background-attachment: fixed;
+
+  margin-top: var(--navbar-height);
+  background-color: var(--background);
+}
+
+.mission {
+  width: auto;
+  max-width: 30rem;
+  height: auto;
+
+  margin: 10% 0 0 67%;
+  padding: 2rem 2rem;
+
+  background-color: rgb(1, 29, 36, 0.7);
+  border-radius: 5px;
 }
 
 .mid-main-list {
