@@ -19,6 +19,12 @@ body {
   font-family: "Khand", sans-serif;
 }
 
+ul {
+  list-style-type: square;
+  margin: 0;
+  padding: 15px 0 0 20px;
+}
+
 h1 {
   font-weight: 900;
   font-size: 2.5rem;
@@ -47,6 +53,28 @@ h2 {
 
   text-transform: uppercase;
   text-shadow: 1px 1px #ff0000, 2px 2px orange, 3px 3px yellow;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 0.8rem;
+
+  padding-top: 0;
+  margin: 0;
+
+  color: var(--text-color);
+
+  font-family: "Press Start 2P", cursive;
+
+  text-transform: uppercase;
+  text-shadow: 1px 1px #ff0000, 2px 2px orange, 3px 3px yellow;
+}
+
+hr {
+  border: none;
+  background-color: orange;
+  color: orange;
+  height: 1px;
 }
 
 nav {
@@ -144,29 +172,176 @@ nav {
   max-width: 30rem;
   height: auto;
 
-  margin: 10% 0 0 67%;
+  margin: 20% 0 0 14%;
   padding: 2rem 2rem;
 
-  background-color: rgb(1, 29, 36, 0.7);
+  background-color: rgb(1, 29, 36, 0.5);
   border-radius: 5px;
+  /* border: 1px solid orange; */
 }
 
-.mid-main-list {
-  text-align: center;
-  padding: 20px 0;
+.form-group {
+}
+
+.form-group input {
+  display: block;
+  width: 70%;
+
+  background-color: rgb(1, 29, 36, 0.1);
+
+  border: 1px solid orange;
+  border-radius: 2px;
+}
+
+#submit {
+  width: 30%;
+  height: 1.5rem;
+
+  margin-top: 5px;
+
+  border: 1px solid orange;
+  border-radius: 2px;
+  background-color: orange;
+  color: white;
+}
+
+#submit:hover {
+  background-color: white;
+  color: orange;
+  cursor: pointer;
 }
 
 .main-mid {
   grid-column: 1 / span 4;
 
-  padding: 20px 10px;
+  padding: 1% 10%;
 }
 
-.main-mid img {
-  height: 400px;
-  width: 320px;
+.games-logo {
+  display: flex;
+
+  padding: 0 6%;
+}
+
+.games-logo h1 {
+  font-size: 1.5rem;
+}
+
+.mid-main-list {
+  text-align: center;
+  margin: 20px 30px;
+}
+.mid-main-list img {
+  height: 300px;
+  width: 220px;
+
+  margin: 2px 2px 0 2px;
 
   object-fit: cover;
   border-radius: 10px;
   border: 3px solid white;
+}
+
+.video-container {
+  text-align: center;
+}
+
+.main-bot {
+  grid-column: 1 / span 4;
+
+  height: 55rem;
+
+  background-image: url("../images/gaming-esports.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.services-logo {
+  display: flex;
+
+  padding: 10rem 0 0.5rem 25%;
+}
+
+.services-logo h1 {
+  font-size: 1.5rem;
+}
+
+.service-container {
+  display: flex;
+
+  height: 50%;
+
+  justify-content: center;
+  align-items: center;
+}
+.service-card {
+  height: 400px;
+  width: 280px;
+
+  margin: 0 2rem;
+  padding: 0.5rem 0.5rem;
+
+  background-color: rgb(1, 29, 36, 0.5);
+  color: white;
+
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+
+.service-card-img {
+  width: 100%;
+
+  text-align: center;
+}
+
+.service-card-img img {
+  height: 8rem;
+}
+
+.service-card h3 {
+  text-align: center;
+}
+
+.service-card p {
+  text-align: center;
+}
+
+.price {
+  font-weight: 800;
+  font-size: 3rem;
+  color: white;
+
+  text-shadow: 2px 2px #ff00dd;
+}
+
+.btn {
+  text-align: center;
+}
+
+.service-card button {
+  width: 50%;
+  height: 1.5rem;
+
+  margin-top: 0;
+
+  border: 1px solid orange;
+  border-radius: 2px;
+  background-color: orange;
+  color: white;
+}
+
+.service-card button:hover {
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+  color: orange;
+
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 3rem;
 }

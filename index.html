@@ -32,8 +32,8 @@
           <div class="links">
             <div class="link-container">
               <a href="#mission" class="nav-link">Our Mission</a>
-              <a href="#" class="nav-link">Games</a>
-              <a href="#" class="nav-link">Services</a>
+              <a href="#supported-games" class="nav-link">Games</a>
+              <a href="#services" class="nav-link">Services</a>
             </div>
           </div>
         </div>
@@ -43,21 +43,15 @@
       <div class="main-top" id="mission">
         <div class="mission">
           <h2>Our Mission</h2>
+          <hr />
           <p>
             We want to bring the joy of gaming on a proffessional level to more
             people. With our experts in gaming <strong>YOU</strong> can become
-            the next pro.<br />
-<hr>
-            Check out our different subscriptions and sign-up today! 
+            the next pro.
           </p>
+          <p>Sign up for our Newsletter below and we will tell you more!</p>
           <form action="">
             <div class="form-group">
-            <label for="Name">Name:
-              <input type="name" placeholder="John Doe" required>
-            </label>
-            </div>
-            <div class="form-group">
-            <label for="email">Email: 
               <input
                 type="email"
                 name="email"
@@ -66,20 +60,20 @@
                 placeholder="email@example.com"
                 required
               />
-            </label>
             </div>
             <div class="btn">
               <button id="submit" type="submit" name="submit">
-                Submit form
+                <strong>SIGN UP</strong>
               </button>
-             </div>
-
+            </div>
           </form>
         </div>
-        <!-- TODO: Work on text div for big image next! 
-          Maybe do a grid inside the main grid for easier positioning, or flexbox?-->
       </div>
+      <span id="supported-games"></span>
       <div class="main-mid">
+        <div class="games-logo">
+          <h1>Supported Games</h1>
+        </div>
         <div class="mid-main-list">
           <img
             src="https://cdn-products.eneba.com/resized-products/e4F2hNGTi5VjMHS29as0dZaQpCPfP6jbQzhPu_GAQ_U_390x400_1x-0.jpeg"
@@ -114,6 +108,14 @@
             alt=""
           />
           <img
+            src="https://upload.wikimedia.org/wikipedia/en/e/ec/Battlefield_2042_cover_art.jpg"
+            alt=""
+          />
+          <img
+            src="https://upload.wikimedia.org/wikipedia/en/d/de/Vermintide_2_cover_art.jpg"
+            alt=""
+          />
+          <img
             src="https://s2.gaming-cdn.com/images/products/709/orig/game-epic-games-borderlands-3-cover.jpg"
             alt=""
           />
@@ -136,12 +138,62 @@
           </div>
         </div>
       </div>
-      <div class="main-bot">
-        <!-- TODO: add subscription cards with clickable buttons -->
+      <div class="main-bot" id="services">
+        <div class="services-logo">
+          <h1>Services</h1>
+        </div>
+          <div class="service-container">
+
+             <div class="service-card">
+               <div class="service-card-img">
+                 <img src="https://cdn-icons-png.flaticon.com/512/1805/1805873.png" alt="" />
+                </div>
+              
+              <h3>Private</h3>
+              <ul>
+                <li>Access to exclusive streams and tutorials</li>
+                <li>Access to our forums and discord</li>
+                <li>Invites to special events and tournaments</li>
+              </ul>
+              <p><strong class="price">4.99</strong> € / month</p>
+              
+              <div class="btn"><button>Subscribe</button></div>
+             
+            </div>
+            <div class="service-card">
+              <div class="service-card-img">
+                <img src="https://cdn-icons.flaticon.com/png/512/1805/premium/1805992.png?token=exp=1643537819~hmac=4660dfc06c69a25c9d31a1819f84e35b" alt="" />
+              </div>
+              <h3>Gunslinger</h3>
+              <ul>
+                <li>Private matches with our PRO teams</li>
+                <li>Group coaching to improve</li>
+                <li>+ previous ranks</li>
+              </ul>
+              <p><strong class="price">6.99</strong> € / month</p>
+              
+              <div class="btn"><button>Subscribe</button></div>
+              
+            </div>
+            <div class="service-card">
+              <div class="service-card-img">
+              <img src="https://cdn-icons-png.flaticon.com/512/4624/4624654.png" alt="" />
+            </div>
+              <h3>Automatic</h3>
+              <ul>
+                <li>1on1 coaching with our dedicated experts</li>
+                <li>Invites to trials to try out for our pro teams</li>
+                <li>+ previous ranks</li>
+              </ul>
+              <p><strong class="price">9.99</strong> € / month</p>
+              <div class="btn"><button>Subscribe</button></div>
+                
+             
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <footer>
-
-    </footer>
+    <footer class="footer"></footer>
   </body>
 </html>
